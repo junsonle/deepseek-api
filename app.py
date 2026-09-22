@@ -2283,7 +2283,7 @@ async def claude_stop_stream(request: Request):
 # ----------------------------------------------------------------------
 @app.get("/")
 def index(request: Request):
-    return templates.TemplateResponse("welcome.html", {"request": request})
+    return templates.TemplateResponse(request=request, name="welcome.html")
 
 
 # ----------------------------------------------------------------------
